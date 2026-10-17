@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>webpage</title>
+    <style>
+        .main {
+            width: 100%;
+            background:aliceblue;
+        }
+        header{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: lightskyblue;
+            color:whitesmoke;
+        }
+        .sub-main{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: beige;
+            
+        }
+        .img{
+            display: flex;
+            justify-content: space-around;
+        }
+        button{
+            background-color:thistle;
+            border-radius: 8px;
+            
+        }
+        .services{
+           display: grid;
+           grid-template-columns: repeat(4, 1fr);
+           gap: 15px;
+           padding: 20px;
+           text-align: center;}
+    
+    .team{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+    }
+    footer{
+        background-color: lightskyblue;
+        display: grid;
+        grid-template-columns:repeat(3,1fr) ;
+    }
+   
+    </style>
+</head>
+<body>
+     <div class="main">
+
+    <header>
+        <h2>DIGITAL STUDIO</h2>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#projects">Work</a>
+            <a href="#services">Services</a>
+            <a href="#team">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <div id="home" class="sub-main">
+    <h1 class="img">
+        <img  src="../video/main img.png" alt="img" width="180px"></h1>
+    <div>
+        <h2 id="projects">BUILDING DIGITAL EXPERIENCES</h2>
+        <p>We create modern websites and apps.</p>
+        <button>Explore Work</button>
+    </div>
+    </div>
+    <h2 id="services">Our Services</h2>
+       <div class="services">
+          <div><h1>🖥️</h1><h3>Web Design</h3></div>
+          <div><h1>📱</h1><h3>Mobile Apps</h3></div>
+          <div><h1>🎨</h1><h3>UI/UX</h3></div>
+          <div><h1>☁️</h1><h3>Cloud Solutions</h3></div>
+      </div>
+   <h2>Our Team</h2>
+      <div class="team" id="team">
+         <div>
+            <img src="../video/men1.png" width="80px">
+            <p>Peter Parker</p>
+            <p>Designer</p>
+        </div>
+         <div>
+            <img src="../video/men2.png" width="78px">
+            <p>Ned Leeds</p>
+            <p>Developer</p>
+        </div>
+         <div>
+             <img src="../video/women.png" width="87px">
+            <p>Jean Grey</p>
+            <p>Manager</p>
+        </div>
+        <div>
+            <img src="../video/men3.png" width="80px">
+            <p>Bruce</p>
+            <p>Developer</p>
+        </div>
+     </div>
+<footer>
+    <div>
+        <h3 id="contact">About Us</h3>
+        <p>We create websites and mobile apps.</p>
+    </div>
+    <div>
+        <h3>Contact</h3>
+        <p>Email: hello@gmail.com</p>
+    </div>
+    <div>
+        <h3>Follow Us</h3>
+        <p>Facebook | Instagram</p>
+    </div>
+</footer>
+     
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> assg 2.2</title>
+    <script>
+    function reverseWords(str) {
+    let words = str.split(" ");
+    let result = [];
+
+    for (let i = 0; i < words.length; i++) {
+        let reverse = words[i].split("").reverse().join("");
+        result.push(reverse);
+    }
+
+    return result.join(" ");
+}
+    console.log(reverseWords("Hello World"));
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

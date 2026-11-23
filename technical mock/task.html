@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login form</title>
+    <style>
+        #message{
+            font-weight: bold;
+        }
+    </style>
+     <script>
+        function validation() {
+
+            let username = document.getElementById("username").value;
+            let password = document.getElementById("password").value;
+            let message = document.getElementById("message");
+
+            if (username == "" && password == "") {
+                message.innerHTML = "Please enter username and password";
+                message.style.color = "red";
+                return false;
+            }
+
+            else if (username == "") {
+                message.innerHTML = "Username is required";
+                message.style.color = "red";
+                return false;
+            }
+
+            else if (password == "") {
+                message.innerHTML = "Password is required";
+                message.style.color = "red";
+                return false;
+            }
+
+            else {
+                message.innerHTML = "Login Successful!";
+                message.style.color = "green";
+                return false;
+            }
+        }
+    </script>
+</head>
+<body>
+    <div style=" text-align: center; padding: 20px;">
+    <h1>Login form</h1>
+    <form onsubmit="return validation()">
+        <label>Username:</label>
+        <input id="username" type="text" placeholder="Enter your username " 
+              style="padding: 8px; margin-bottom: 8px;margin-top: 10px; border-radius:2px; ">
+        <br>
+        <label>Password:</label>
+        <input id="password" type="password" placeholder="Enter your password" 
+              style="padding: 8px; margin-bottom: 8px; margin-top: 10px; border-radius: 2px;">
+        <br>
+        <button type="submit" 
+               style="width:250px; height: 40px; background-color:blue;padding:10px; margin-top: 20px;">Login</button>
+               
+        <p id="message" style="text-align: center; margin-top: 40px;"> </p>
+    </form>
+    </div>
+</body>
+</html>
